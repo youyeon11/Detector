@@ -22,3 +22,4 @@ locust-report*
 *.log
 !docker/.env.app.example
 !docker/.env.elasticsearch
+pytest-cache-files*/
