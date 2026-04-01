@@ -23,3 +23,5 @@ locust-report*
 !docker/.env.app.example
 !docker/.env.elasticsearch
 pytest-cache-files*/
+venv/
+.env*
