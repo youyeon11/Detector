@@ -1,0 +1,2395 @@
+{
+  "summary": {
+    "ngram_docs": {
+      "total_hit_gain_when_using_index_analyzer": 12,
+      "allow_case_gain_count": 2,
+      "detect_case_gain_count": 2,
+      "review_case_gain_count": 0
+    },
+    "edge_docs": {
+      "total_hit_gain_when_using_index_analyzer": 8,
+      "allow_case_gain_count": 1,
+      "detect_case_gain_count": 2,
+      "review_case_gain_count": 0
+    },
+    "ngram_lexicon": {
+      "total_hit_gain_when_using_index_analyzer": 6,
+      "allow_case_gain_count": 1,
+      "detect_case_gain_count": 2,
+      "review_case_gain_count": 0
+    },
+    "edge_lexicon": {
+      "total_hit_gain_when_using_index_analyzer": 2,
+      "allow_case_gain_count": 1,
+      "detect_case_gain_count": 1,
+      "review_case_gain_count": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "p5-001",
+      "text": "씨발",
+      "expected_detection": "detect",
+      "notes": "기준 욕설",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4787302,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4787302,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-002",
+      "text": "씌발",
+      "expected_detection": "detect",
+      "notes": "ko_noise_map 치환 검증",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4787302,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4787302,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-003",
+      "text": "ㅆ발",
+      "expected_detection": "detect",
+      "notes": "자모 축약 변형",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4787302,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4787302,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-004",
+      "text": "씨 발",
+      "expected_detection": "detect",
+      "notes": "공백 삽입 변형",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4787302,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4787302,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-005",
+      "text": "시이발",
+      "expected_detection": "detect",
+      "notes": "모음 반복 변형",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "시발"
+          ],
+          "index_override_tokens": [
+            "시발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-4",
+              "score": 1.6565616,
+              "canonical": null,
+              "raw_text": "시-발 장난하냐",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-1",
+              "score": 1.479442,
+              "canonical": null,
+              "raw_text": "시발 진짜 짜증나네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-10",
+              "score": 1.3365389,
+              "canonical": null,
+              "raw_text": "'시발' 사용 금지 예시 문장",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-4",
+              "score": 1.6565616,
+              "canonical": null,
+              "raw_text": "시-발 장난하냐",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-1",
+              "score": 1.479442,
+              "canonical": null,
+              "raw_text": "시발 진짜 짜증나네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-10",
+              "score": 1.3365389,
+              "canonical": null,
+              "raw_text": "'시발' 사용 금지 예시 문장",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "시발"
+          ],
+          "index_override_tokens": [
+            "시발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-4",
+              "score": 1.5787977,
+              "canonical": null,
+              "raw_text": "시-발 장난하냐",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-1",
+              "score": 1.4673969,
+              "canonical": null,
+              "raw_text": "시발 진짜 짜증나네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-10",
+              "score": 1.4673969,
+              "canonical": null,
+              "raw_text": "'시발' 사용 금지 예시 문장",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-4",
+              "score": 1.5787977,
+              "canonical": null,
+              "raw_text": "시-발 장난하냐",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-1",
+              "score": 1.4673969,
+              "canonical": null,
+              "raw_text": "시발 진짜 짜증나네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-10",
+              "score": 1.4673969,
+              "canonical": null,
+              "raw_text": "'시발' 사용 금지 예시 문장",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "시발"
+          ],
+          "index_override_tokens": [
+            "시발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 3.1606672,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 3.1606672,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "시발"
+          ],
+          "index_override_tokens": [
+            "시발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.9028783,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.9028783,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-006",
+      "text": "씨- 발",
+      "expected_detection": "detect",
+      "notes": "특수문자 삽입 변형",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨",
+            "발"
+          ],
+          "index_override_tokens": [],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발"
+          ],
+          "index_override_tokens": [
+            "씨발"
+          ],
+          "default_search_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨",
+            "발"
+          ],
+          "index_override_tokens": [],
+          "default_search_hits": [],
+          "index_override_hits": []
+        }
+      }
+    },
+    {
+      "id": "p5-007",
+      "text": "ㅅㅣㅂㅏㄹ",
+      "expected_detection": "review",
+      "notes": "현재 규칙으로 완전 수렴 불확실",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "ㅅㅣㅂㅏㄹ"
+          ],
+          "index_override_tokens": [
+            "ㅅㅣ",
+            "ㅅㅣㅂ",
+            "ㅣㅂ",
+            "ㅣㅂㅏ",
+            "ㅂㅏ",
+            "ㅂㅏㄹ",
+            "ㅏㄹ"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "ㅅㅣㅂㅏㄹ"
+          ],
+          "index_override_tokens": [
+            "ㅅㅣ",
+            "ㅅㅣㅂ",
+            "ㅅㅣㅂㅏ",
+            "ㅅㅣㅂㅏㄹ"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "ㅅㅣㅂㅏㄹ"
+          ],
+          "index_override_tokens": [
+            "ㅅㅣ",
+            "ㅅㅣㅂ",
+            "ㅣㅂ",
+            "ㅣㅂㅏ",
+            "ㅂㅏ",
+            "ㅂㅏㄹ",
+            "ㅏㄹ"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "ㅅㅣㅂㅏㄹ"
+          ],
+          "index_override_tokens": [
+            "ㅅㅣ",
+            "ㅅㅣㅂ",
+            "ㅅㅣㅂㅏ",
+            "ㅅㅣㅂㅏㄹ"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        }
+      }
+    },
+    {
+      "id": "p5-008",
+      "text": "씨발놈아",
+      "expected_detection": "detect",
+      "notes": "edge/ngram 기여 확인",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발놈아"
+          ],
+          "index_override_tokens": [
+            "씨발",
+            "씨발놈",
+            "발놈",
+            "발놈아",
+            "놈아"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-2",
+              "score": 1.9785453,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5612285,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발놈아"
+          ],
+          "index_override_tokens": [
+            "씨발",
+            "씨발놈",
+            "씨발놈아"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "eval-2",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "씨발 왜 이렇게 늦어",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.1114197,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-11",
+              "score": 1.5304728,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨발놈아"
+          ],
+          "index_override_tokens": [
+            "씨발",
+            "씨발놈",
+            "발놈",
+            "발놈아",
+            "놈아"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "씨발놈",
+              "score": 9.234475,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "미친놈",
+              "score": 1.3551656,
+              "canonical": "미친놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨발놈아"
+          ],
+          "index_override_tokens": [
+            "씨발",
+            "씨발놈",
+            "씨발놈아"
+          ],
+          "default_search_hits": [
+            {
+              "id": "씨발놈",
+              "score": 1.939534,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "씨발놈",
+              "score": 6.357798,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "시발",
+              "score": 2.597235,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-009",
+      "text": "진짜씨발이야",
+      "expected_detection": "detect",
+      "notes": "문장 중간 삽입",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "진짜씨발이야"
+          ],
+          "index_override_tokens": [
+            "진짜",
+            "진짜씨",
+            "짜씨",
+            "짜씨발",
+            "씨발",
+            "씨발이",
+            "발이",
+            "발이야",
+            "이야"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "eval-1",
+              "score": 2.3500938,
+              "canonical": null,
+              "raw_text": "시발 진짜 짜증나네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-17",
+              "score": 2.3500938,
+              "canonical": null,
+              "raw_text": "오늘 회의 진짜 길다",
+              "expected_label": "PASS"
+            },
+            {
+              "id": "eval-3",
+              "score": 2.0902922,
+              "canonical": null,
+              "raw_text": "ㅅㅂ 또 오류났네",
+              "expected_label": "BLOCK"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "진짜씨발이야"
+          ],
+          "index_override_tokens": [
+            "진짜",
+            "진짜씨",
+            "진짜씨발",
+            "진짜씨발이",
+            "진짜씨발이야"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "eval-17",
+              "score": 2.5079205,
+              "canonical": null,
+              "raw_text": "오늘 회의 진짜 길다",
+              "expected_label": "PASS"
+            },
+            {
+              "id": "eval-1",
+              "score": 2.33096,
+              "canonical": null,
+              "raw_text": "시발 진짜 짜증나네",
+              "expected_label": "BLOCK"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "진짜씨발이야"
+          ],
+          "index_override_tokens": [
+            "진짜",
+            "진짜씨",
+            "짜씨",
+            "짜씨발",
+            "씨발",
+            "씨발이",
+            "발이",
+            "발이야",
+            "이야"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.7312489,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            },
+            {
+              "id": "씨발놈",
+              "score": 2.4121156,
+              "canonical": "씨발놈",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "진짜씨발이야"
+          ],
+          "index_override_tokens": [
+            "진짜",
+            "진짜씨",
+            "진짜씨발",
+            "진짜씨발이",
+            "진짜씨발이야"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        }
+      }
+    },
+    {
+      "id": "p5-010",
+      "text": "씨바",
+      "expected_detection": "review",
+      "notes": "짧은 부분 일치",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨바"
+          ],
+          "index_override_tokens": [
+            "씨바"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨바"
+          ],
+          "index_override_tokens": [
+            "씨바"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨바"
+          ],
+          "index_override_tokens": [
+            "씨바"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨바"
+          ],
+          "index_override_tokens": [
+            "씨바"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        }
+      }
+    },
+    {
+      "id": "p5-011",
+      "text": "발표 잘했어",
+      "expected_detection": "allow",
+      "notes": "정상 문장 오탐 방지",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "발표잘했어"
+          ],
+          "index_override_tokens": [
+            "발표",
+            "발표잘",
+            "표잘",
+            "표잘했",
+            "잘했",
+            "잘했어",
+            "했어"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "발표",
+            "잘했어"
+          ],
+          "index_override_tokens": [
+            "발표",
+            "잘했",
+            "잘했어"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "발표잘했어"
+          ],
+          "index_override_tokens": [
+            "발표",
+            "발표잘",
+            "표잘",
+            "표잘했",
+            "잘했",
+            "잘했어",
+            "했어"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "발표",
+            "잘했어"
+          ],
+          "index_override_tokens": [
+            "발표",
+            "잘했",
+            "잘했어"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        }
+      }
+    },
+    {
+      "id": "p5-012",
+      "text": "씨름 한판",
+      "expected_detection": "allow",
+      "notes": "유사음 비욕설",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨름한판"
+          ],
+          "index_override_tokens": [
+            "씨름",
+            "씨름한",
+            "름한",
+            "름한판",
+            "한판"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨름",
+            "한판"
+          ],
+          "index_override_tokens": [
+            "씨름",
+            "한판"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "씨름한판"
+          ],
+          "index_override_tokens": [
+            "씨름",
+            "씨름한",
+            "름한",
+            "름한판",
+            "한판"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "씨름",
+            "한판"
+          ],
+          "index_override_tokens": [
+            "씨름",
+            "한판"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        }
+      }
+    },
+    {
+      "id": "p5-013",
+      "text": "개새기",
+      "expected_detection": "detect",
+      "notes": "replacement_map 검증",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "개새끼"
+          ],
+          "index_override_tokens": [
+            "개새",
+            "개새끼",
+            "새끼"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-7",
+              "score": 2.7662857,
+              "canonical": null,
+              "raw_text": "개새끼야 당장 꺼져",
+              "expected_label": "BLOCK"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-7",
+              "score": 8.298857,
+              "canonical": null,
+              "raw_text": "개새끼야 당장 꺼져",
+              "expected_label": "BLOCK"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "개새끼"
+          ],
+          "index_override_tokens": [
+            "개새",
+            "개새끼"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-7",
+              "score": 2.6999364,
+              "canonical": null,
+              "raw_text": "개새끼야 당장 꺼져",
+              "expected_label": "BLOCK"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-7",
+              "score": 5.399873,
+              "canonical": null,
+              "raw_text": "개새끼야 당장 꺼져",
+              "expected_label": "BLOCK"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "개새끼"
+          ],
+          "index_override_tokens": [
+            "개새",
+            "개새끼",
+            "새끼"
+          ],
+          "default_search_hits": [
+            {
+              "id": "개새끼",
+              "score": 2.9824023,
+              "canonical": "개새끼",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "개새끼",
+              "score": 8.9472065,
+              "canonical": "개새끼",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "개새끼"
+          ],
+          "index_override_tokens": [
+            "개새",
+            "개새끼"
+          ],
+          "default_search_hits": [
+            {
+              "id": "개새끼",
+              "score": 3.054597,
+              "canonical": "개새끼",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "개새끼",
+              "score": 6.109194,
+              "canonical": "개새끼",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-014",
+      "text": "병쉰",
+      "expected_detection": "detect",
+      "notes": "replacement_map 검증",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "병신"
+          ],
+          "index_override_tokens": [
+            "병신"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-6",
+              "score": 1.9046806,
+              "canonical": null,
+              "raw_text": "븅신 인증이네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-5",
+              "score": 1.701032,
+              "canonical": null,
+              "raw_text": "병신 같은 소리 하네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-12",
+              "score": 1.1914654,
+              "canonical": null,
+              "raw_text": "게시글에서 병신 표현을 탐지해야 한다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-6",
+              "score": 1.9046806,
+              "canonical": null,
+              "raw_text": "븅신 인증이네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-5",
+              "score": 1.701032,
+              "canonical": null,
+              "raw_text": "병신 같은 소리 하네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-12",
+              "score": 1.1914654,
+              "canonical": null,
+              "raw_text": "게시글에서 병신 표현을 탐지해야 한다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "병신"
+          ],
+          "index_override_tokens": [
+            "병신"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-5",
+              "score": 1.8152692,
+              "canonical": null,
+              "raw_text": "병신 같은 소리 하네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-6",
+              "score": 1.8152692,
+              "canonical": null,
+              "raw_text": "븅신 인증이네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-12",
+              "score": 1.1853492,
+              "canonical": null,
+              "raw_text": "게시글에서 병신 표현을 탐지해야 한다",
+              "expected_label": "REVIEW"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-5",
+              "score": 1.8152692,
+              "canonical": null,
+              "raw_text": "병신 같은 소리 하네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-6",
+              "score": 1.8152692,
+              "canonical": null,
+              "raw_text": "븅신 인증이네",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-12",
+              "score": 1.1853492,
+              "canonical": null,
+              "raw_text": "게시글에서 병신 표현을 탐지해야 한다",
+              "expected_label": "REVIEW"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "병신"
+          ],
+          "index_override_tokens": [
+            "병신"
+          ],
+          "default_search_hits": [
+            {
+              "id": "병신",
+              "score": 3.73469,
+              "canonical": "병신",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "병신",
+              "score": 3.73469,
+              "canonical": "병신",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "병신"
+          ],
+          "index_override_tokens": [
+            "병신"
+          ],
+          "default_search_hits": [
+            {
+              "id": "병신",
+              "score": 3.578242,
+              "canonical": "병신",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "병신",
+              "score": 3.578242,
+              "canonical": "병신",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-015",
+      "text": "조온나",
+      "expected_detection": "review",
+      "notes": "replacement_map은 되지만 lexicon 미포함 가능",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "존나"
+          ],
+          "index_override_tokens": [
+            "존나"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "존나"
+          ],
+          "index_override_tokens": [
+            "존나"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "존나"
+          ],
+          "index_override_tokens": [
+            "존나"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "존나"
+          ],
+          "index_override_tokens": [
+            "존나"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        }
+      }
+    },
+    {
+      "id": "p5-016",
+      "text": "시발점에서 출발",
+      "expected_detection": "allow",
+      "notes": "동형 비욕설",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "시발점에서출발"
+          ],
+          "index_override_tokens": [
+            "시발",
+            "시발점",
+            "발점",
+            "발점에",
+            "점에",
+            "점에서",
+            "에서",
+            "에서출",
+            "서출",
+            "서출발",
+            "출발"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "eval-13",
+              "score": 5.7664194,
+              "canonical": null,
+              "raw_text": "시발점부터 다시 설명해 주세요",
+              "expected_label": "PASS"
+            },
+            {
+              "id": "eval-12",
+              "score": 2.041193,
+              "canonical": null,
+              "raw_text": "게시글에서 병신 표현을 탐지해야 한다",
+              "expected_label": "REVIEW"
+            },
+            {
+              "id": "eval-4",
+              "score": 1.6565616,
+              "canonical": null,
+              "raw_text": "시-발 장난하냐",
+              "expected_label": "BLOCK"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "시발점에서",
+            "출발"
+          ],
+          "index_override_tokens": [
+            "시발",
+            "시발점",
+            "시발점에",
+            "시발점에서",
+            "출발"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "eval-13",
+              "score": 3.3986108,
+              "canonical": null,
+              "raw_text": "시발점부터 다시 설명해 주세요",
+              "expected_label": "PASS"
+            },
+            {
+              "id": "eval-4",
+              "score": 1.5787977,
+              "canonical": null,
+              "raw_text": "시-발 장난하냐",
+              "expected_label": "BLOCK"
+            },
+            {
+              "id": "eval-1",
+              "score": 1.4673969,
+              "canonical": null,
+              "raw_text": "시발 진짜 짜증나네",
+              "expected_label": "BLOCK"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "시발점에서출발"
+          ],
+          "index_override_tokens": [
+            "시발",
+            "시발점",
+            "발점",
+            "발점에",
+            "점에",
+            "점에서",
+            "에서",
+            "에서출",
+            "서출",
+            "서출발",
+            "출발"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 3.1606672,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "시발점에서",
+            "출발"
+          ],
+          "index_override_tokens": [
+            "시발",
+            "시발점",
+            "시발점에",
+            "시발점에서",
+            "출발"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "시발",
+              "score": 2.9028783,
+              "canonical": "시발",
+              "raw_text": null,
+              "expected_label": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "p5-017",
+      "text": "개시 합니다",
+      "expected_detection": "allow",
+      "notes": "정상 단어 오탐 방지",
+      "comparisons": {
+        "ngram_docs": {
+          "field": "raw_text.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "개시합니다"
+          ],
+          "index_override_tokens": [
+            "개시",
+            "개시합",
+            "시합",
+            "시합니",
+            "합니",
+            "합니다",
+            "니다"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": [
+            {
+              "id": "eval-14",
+              "score": 7.902937,
+              "canonical": null,
+              "raw_text": "개시 여부를 오늘 결정합니다",
+              "expected_label": "PASS"
+            },
+            {
+              "id": "eval-11",
+              "score": 5.270047,
+              "canonical": null,
+              "raw_text": "욕설 예시로 씨발을 분석합니다",
+              "expected_label": "REVIEW"
+            },
+            {
+              "id": "eval-18",
+              "score": 1.498035,
+              "canonical": null,
+              "raw_text": "서비스 오류 원인을 분석 중입니다",
+              "expected_label": "PASS"
+            }
+          ]
+        },
+        "edge_docs": {
+          "field": "raw_text.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "개시",
+            "합니다"
+          ],
+          "index_override_tokens": [
+            "개시",
+            "합니",
+            "합니다"
+          ],
+          "default_search_hits": [
+            {
+              "id": "eval-14",
+              "score": 2.3854823,
+              "canonical": null,
+              "raw_text": "개시 여부를 오늘 결정합니다",
+              "expected_label": "PASS"
+            }
+          ],
+          "index_override_hits": [
+            {
+              "id": "eval-14",
+              "score": 2.3854823,
+              "canonical": null,
+              "raw_text": "개시 여부를 오늘 결정합니다",
+              "expected_label": "PASS"
+            }
+          ]
+        },
+        "ngram_lexicon": {
+          "field": "variants.ngram",
+          "default_search_analyzer": "ko_ngram_search_analyzer",
+          "index_analyzer": "ko_ngram_index_analyzer",
+          "default_search_tokens": [
+            "개시합니다"
+          ],
+          "index_override_tokens": [
+            "개시",
+            "개시합",
+            "시합",
+            "시합니",
+            "합니",
+            "합니다",
+            "니다"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        },
+        "edge_lexicon": {
+          "field": "variants.edge",
+          "default_search_analyzer": "ko_edge_search_analyzer",
+          "index_analyzer": "ko_edge_index_analyzer",
+          "default_search_tokens": [
+            "개시",
+            "합니다"
+          ],
+          "index_override_tokens": [
+            "개시",
+            "합니",
+            "합니다"
+          ],
+          "default_search_hits": [],
+          "index_override_hits": []
+        }
+      }
+    }
+  ]
+}
