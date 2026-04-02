@@ -1,0 +1,6157 @@
+{
+  "input_path": "C:\\Users\\SSAFY\\Documents\\study\\Detector\\dataset\\phase5_input_set.json",
+  "current_defaults": {
+    "minimum_should_match": "70%",
+    "min_score": 0.5,
+    "term_boost": 10.0,
+    "norm_boost": 8.0,
+    "ngram_boost": 4.0,
+    "fuzzy_boost": 3.0
+  },
+  "lexicon_multi_match": [
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "1",
+      "min_score": null,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "1",
+      "min_score": 0.1,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "1",
+      "min_score": 0.5,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "1",
+      "min_score": 1.0,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "1",
+      "min_score": 2.0,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "70%",
+      "min_score": null,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "70%",
+      "min_score": 0.1,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "70%",
+      "min_score": 0.5,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "70%",
+      "min_score": 1.0,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "70%",
+      "min_score": 2.0,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "2",
+      "min_score": null,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "2",
+      "min_score": 0.1,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "2",
+      "min_score": 0.5,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "2",
+      "min_score": 1.0,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "2",
+      "min_score": 2.0,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "100%",
+      "min_score": null,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "100%",
+      "min_score": 0.1,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "100%",
+      "min_score": 0.5,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "100%",
+      "min_score": 1.0,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "lexicon",
+      "minimum_should_match": "100%",
+      "min_score": 2.0,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.824
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    }
+  ],
+  "docs_multi_match": [
+    {
+      "scope": "docs",
+      "minimum_should_match": "1",
+      "min_score": null,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "1",
+      "min_score": 0.1,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "1",
+      "min_score": 0.5,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "1",
+      "min_score": 1.0,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "1",
+      "min_score": 2.0,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 6,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.6,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.353
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "70%",
+      "min_score": null,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "70%",
+      "min_score": 0.1,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "70%",
+      "min_score": 0.5,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "70%",
+      "min_score": 1.0,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "70%",
+      "min_score": 2.0,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 6,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.6,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.353
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "2",
+      "min_score": null,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "2",
+      "min_score": 0.1,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "2",
+      "min_score": 0.5,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "2",
+      "min_score": 1.0,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "2",
+      "min_score": 2.0,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 6,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.6,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.353
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "100%",
+      "min_score": null,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "100%",
+      "min_score": 0.1,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "100%",
+      "min_score": 0.5,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "100%",
+      "min_score": 1.0,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 8,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.8,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 1.294
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "시-발 장난하냐"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 3,
+          "top_hit": "븅신 인증이네"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "scope": "docs",
+      "minimum_should_match": "100%",
+      "min_score": 2.0,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ],
+      "summary": {
+        "detect_hits": 6,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.6,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.353
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "ㅅㅂ 또 오류났네"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼야 당장 꺼져"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    }
+  ],
+  "lexicon_fuzzy_prefix": [
+    {
+      "prefix_length": 0,
+      "fields": [
+        "canonical.norm",
+        "variants.norm"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.588
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 2,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "prefix_length": 1,
+      "fields": [
+        "canonical.norm",
+        "variants.norm"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.529
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    },
+    {
+      "prefix_length": 2,
+      "fields": [
+        "canonical.norm",
+        "variants.norm"
+      ],
+      "summary": {
+        "detect_hits": 9,
+        "detect_targets": 10,
+        "review_hits": 0,
+        "review_targets": 3,
+        "allow_false_positives": 0,
+        "allow_targets": 4,
+        "detect_recall": 0.9,
+        "review_capture_rate": 0.0,
+        "allow_fp_rate": 0.0,
+        "avg_hit_count": 0.529
+      },
+      "cases": [
+        {
+          "id": "p5-001",
+          "text": "씨발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-002",
+          "text": "씌발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-003",
+          "text": "ㅆ발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-004",
+          "text": "씨 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-005",
+          "text": "시이발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-006",
+          "text": "씨- 발",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "시발"
+        },
+        {
+          "id": "p5-007",
+          "text": "ㅅㅣㅂㅏㄹ",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-008",
+          "text": "씨발놈아",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "씨발놈"
+        },
+        {
+          "id": "p5-009",
+          "text": "진짜씨발이야",
+          "expected_detection": "detect",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-010",
+          "text": "씨바",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-011",
+          "text": "발표 잘했어",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-012",
+          "text": "씨름 한판",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-013",
+          "text": "개새기",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "개새끼"
+        },
+        {
+          "id": "p5-014",
+          "text": "병쉰",
+          "expected_detection": "detect",
+          "hit_count": 1,
+          "top_hit": "병신"
+        },
+        {
+          "id": "p5-015",
+          "text": "조온나",
+          "expected_detection": "review",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-016",
+          "text": "시발점에서 출발",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        },
+        {
+          "id": "p5-017",
+          "text": "개시 합니다",
+          "expected_detection": "allow",
+          "hit_count": 0,
+          "top_hit": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "sample_count": 17,
+  "lexicon": {
+    "norm_only": {
+      "detect_hits": 9,
+      "detect_targets": 10,
+      "allow_false_positives": 0,
+      "allow_targets": 4,
+      "review_hits": 0,
+      "review_targets": 3,
+      "detect_recall": 0.9,
+      "allow_fp_rate": 0.0,
+      "review_capture_rate": 0.0,
+      "avg_hit_count": 0.529,
+      "avg_top_score_on_hits": 5.716,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2"
+      ]
+    },
+    "ngram_only": {
+      "detect_hits": 8,
+      "detect_targets": 10,
+      "allow_false_positives": 0,
+      "allow_targets": 4,
+      "review_hits": 0,
+      "review_targets": 3,
+      "detect_recall": 0.8,
+      "allow_fp_rate": 0.0,
+      "review_capture_rate": 0.0,
+      "avg_hit_count": 0.765,
+      "avg_top_score_on_hits": 2.942,
+      "fields": [
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ]
+    },
+    "edge_only": {
+      "detect_hits": 8,
+      "detect_targets": 10,
+      "allow_false_positives": 0,
+      "allow_targets": 4,
+      "review_hits": 0,
+      "review_targets": 3,
+      "detect_recall": 0.8,
+      "allow_fp_rate": 0.0,
+      "review_capture_rate": 0.0,
+      "avg_hit_count": 0.706,
+      "avg_top_score_on_hits": 2.733,
+      "fields": [
+        "canonical.edge^1",
+        "variants.edge^1"
+      ]
+    },
+    "nori_only": {
+      "detect_hits": 9,
+      "detect_targets": 10,
+      "allow_false_positives": 1,
+      "allow_targets": 4,
+      "review_hits": 3,
+      "review_targets": 3,
+      "detect_recall": 0.9,
+      "allow_fp_rate": 0.25,
+      "review_capture_rate": 1.0,
+      "avg_hit_count": 1.353,
+      "avg_top_score_on_hits": 3.309,
+      "fields": [
+        "canonical.nori^1",
+        "variants.nori^1"
+      ]
+    },
+    "norm_ngram": {
+      "detect_hits": 9,
+      "detect_targets": 10,
+      "allow_false_positives": 0,
+      "allow_targets": 4,
+      "review_hits": 0,
+      "review_targets": 3,
+      "detect_recall": 0.9,
+      "allow_fp_rate": 0.0,
+      "review_capture_rate": 0.0,
+      "avg_hit_count": 0.824,
+      "avg_top_score_on_hits": 5.716,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1"
+      ]
+    },
+    "full_multi": {
+      "detect_hits": 10,
+      "detect_targets": 10,
+      "allow_false_positives": 1,
+      "allow_targets": 4,
+      "review_hits": 3,
+      "review_targets": 3,
+      "detect_recall": 1.0,
+      "allow_fp_rate": 0.25,
+      "review_capture_rate": 1.0,
+      "avg_hit_count": 1.647,
+      "avg_top_score_on_hits": 4.054,
+      "fields": [
+        "canonical.norm^3",
+        "variants.norm^2",
+        "canonical.ngram^1",
+        "variants.ngram^1",
+        "canonical.edge^1",
+        "variants.edge^1",
+        "canonical.nori^0.5",
+        "variants.nori^0.5"
+      ]
+    }
+  },
+  "docs": {
+    "norm_only": {
+      "detect_hits": 0,
+      "detect_targets": 10,
+      "allow_false_positives": 0,
+      "allow_targets": 4,
+      "review_hits": 0,
+      "review_targets": 3,
+      "detect_recall": 0.0,
+      "allow_fp_rate": 0.0,
+      "review_capture_rate": 0.0,
+      "avg_hit_count": 0.0,
+      "avg_top_score_on_hits": 0.0,
+      "fields": [
+        "raw_text.norm^2",
+        "normalized_text^3"
+      ]
+    },
+    "ngram_only": {
+      "detect_hits": 8,
+      "detect_targets": 10,
+      "allow_false_positives": 0,
+      "allow_targets": 4,
+      "review_hits": 0,
+      "review_targets": 3,
+      "detect_recall": 0.8,
+      "allow_fp_rate": 0.0,
+      "review_capture_rate": 0.0,
+      "avg_hit_count": 1.294,
+      "avg_top_score_on_hits": 2.136,
+      "fields": [
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ]
+    },
+    "edge_only": {
+      "detect_hits": 7,
+      "detect_targets": 10,
+      "allow_false_positives": 1,
+      "allow_targets": 4,
+      "review_hits": 0,
+      "review_targets": 3,
+      "detect_recall": 0.7,
+      "allow_fp_rate": 0.25,
+      "review_capture_rate": 0.0,
+      "avg_hit_count": 1.176,
+      "avg_top_score_on_hits": 2.159,
+      "fields": [
+        "raw_text.edge^1",
+        "normalized_text.edge^1"
+      ]
+    },
+    "nori_only": {
+      "detect_hits": 9,
+      "detect_targets": 10,
+      "allow_false_positives": 3,
+      "allow_targets": 4,
+      "review_hits": 3,
+      "review_targets": 3,
+      "detect_recall": 0.9,
+      "allow_fp_rate": 0.75,
+      "review_capture_rate": 1.0,
+      "avg_hit_count": 1.765,
+      "avg_top_score_on_hits": 3.143,
+      "fields": [
+        "raw_text.nori^1"
+      ]
+    },
+    "norm_ngram": {
+      "detect_hits": 8,
+      "detect_targets": 10,
+      "allow_false_positives": 0,
+      "allow_targets": 4,
+      "review_hits": 0,
+      "review_targets": 3,
+      "detect_recall": 0.8,
+      "allow_fp_rate": 0.0,
+      "review_capture_rate": 0.0,
+      "avg_hit_count": 1.294,
+      "avg_top_score_on_hits": 2.136,
+      "fields": [
+        "raw_text.norm^2",
+        "normalized_text^3",
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1"
+      ]
+    },
+    "full_multi": {
+      "detect_hits": 10,
+      "detect_targets": 10,
+      "allow_false_positives": 3,
+      "allow_targets": 4,
+      "review_hits": 3,
+      "review_targets": 3,
+      "detect_recall": 1.0,
+      "allow_fp_rate": 0.75,
+      "review_capture_rate": 1.0,
+      "avg_hit_count": 2.412,
+      "avg_top_score_on_hits": 1.936,
+      "fields": [
+        "raw_text.norm^2",
+        "normalized_text^3",
+        "raw_text.ngram^1",
+        "normalized_text.ngram^1",
+        "raw_text.edge^1",
+        "normalized_text.edge^1",
+        "raw_text.nori^0.5"
+      ]
+    }
+  }
+}
