@@ -1,0 +1,246 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0,
+    "analysis": {
+      "char_filter": {
+        "ko_noise_map": {
+          "type": "mapping",
+          "mappings": [
+            "! => ",
+            "? => ",
+            ". => ",
+            ", => ",
+            "- => ",
+            "_ => ",
+            "~ => ",
+            "， => ",
+            "・ => ",
+            "' => ",
+            "\" => ",
+            "` => ",
+            "씌발 => 씨발",
+            "시이발 => 시발",
+            "시이이발 => 시발",
+            "시1발 => 시발",
+            "씨1발 => 씨발",
+            "씨바알 => 씨발",
+            "씨이발 => 씨발",
+            "씹알 => 씨발",
+            "씹할 => 씨발",
+            "씨팔 => 씨발",
+            "ㅅㅂ => 씨발",
+            "ㅆㅂ => 씨발",
+            "ㅆ발 => 씨발",
+            "ㅅ1발 => 시발",
+            "시-발 => 시발",
+            "씨-발 => 씨발",
+            "시 발 => 시발",
+            "씨 발 => 씨발",
+            "시   발 => 시발",
+            "씨   발 => 씨발",
+            "개새 => 개새끼",
+            "개색 => 개새끼",
+            "개색기 => 개새끼",
+            "개새기 => 개새끼",
+            "개쉐이 => 개새끼",
+            "개쉐이야 => 개새끼야",
+            "개쉑 => 개새끼",
+            "개쉑아 => 개새끼야",
+            "병쉰 => 병신",
+            "븅신 => 병신",
+            "빙신 => 병신",
+            "ㅂㅅ => 병신",
+            "존나아 => 존나",
+            "졸라 => 존나",
+            "조온나 => 존나",
+            "ㅈㄴ => 존나"
+          ]
+        },
+        "remove_spaces": {
+          "type": "pattern_replace",
+          "pattern": "\\s+",
+          "replacement": ""
+        }
+      },
+      "tokenizer": {
+        "ko_ngram_tokenizer": {
+          "type": "ngram",
+          "min_gram": 2,
+          "max_gram": 3,
+          "token_chars": [
+            "letter",
+            "digit"
+          ]
+        },
+        "ko_edge_tokenizer": {
+          "type": "edge_ngram",
+          "min_gram": 2,
+          "max_gram": 10,
+          "token_chars": [
+            "letter",
+            "digit"
+          ]
+        }
+      },
+      "filter": {
+        "ko_length_2_30": {
+          "type": "length",
+          "min": 2,
+          "max": 30
+        }
+      },
+      "analyzer": {
+        "ko_norm_index_analyzer": {
+          "type": "custom",
+          "char_filter": [
+            "ko_noise_map",
+            "remove_spaces"
+          ],
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        },
+        "ko_norm_search_analyzer": {
+          "type": "custom",
+          "char_filter": [
+            "ko_noise_map",
+            "remove_spaces"
+          ],
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase"
+          ]
+        },
+        "ko_ngram_index_analyzer": {
+          "type": "custom",
+          "char_filter": [
+            "ko_noise_map",
+            "remove_spaces"
+          ],
+          "tokenizer": "ko_ngram_tokenizer",
+          "filter": [
+            "lowercase",
+            "ko_length_2_30"
+          ]
+        },
+        "ko_ngram_search_analyzer": {
+          "type": "custom",
+          "char_filter": [
+            "ko_noise_map",
+            "remove_spaces"
+          ],
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase"
+          ]
+        },
+        "ko_edge_index_analyzer": {
+          "type": "custom",
+          "char_filter": [
+            "ko_noise_map"
+          ],
+          "tokenizer": "ko_edge_tokenizer",
+          "filter": [
+            "lowercase"
+          ]
+        },
+        "ko_edge_search_analyzer": {
+          "type": "custom",
+          "char_filter": [
+            "ko_noise_map"
+          ],
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase"
+          ]
+        },
+        "ko_nori_analyzer": {
+          "type": "custom",
+          "tokenizer": "nori_tokenizer",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "dynamic": "strict",
+    "properties": {
+      "canonical": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "norm": {
+            "type": "text",
+            "analyzer": "ko_norm_index_analyzer",
+            "search_analyzer": "ko_norm_search_analyzer"
+          },
+          "ngram": {
+            "type": "text",
+            "analyzer": "ko_ngram_index_analyzer",
+            "search_analyzer": "ko_ngram_search_analyzer"
+          },
+          "edge": {
+            "type": "text",
+            "analyzer": "ko_edge_index_analyzer",
+            "search_analyzer": "ko_edge_search_analyzer"
+          },
+          "nori": {
+            "type": "text",
+            "analyzer": "ko_nori_analyzer"
+          }
+        }
+      },
+      "variants": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "norm": {
+            "type": "text",
+            "analyzer": "ko_norm_index_analyzer",
+            "search_analyzer": "ko_norm_search_analyzer"
+          },
+          "ngram": {
+            "type": "text",
+            "analyzer": "ko_ngram_index_analyzer",
+            "search_analyzer": "ko_ngram_search_analyzer"
+          },
+          "edge": {
+            "type": "text",
+            "analyzer": "ko_edge_index_analyzer",
+            "search_analyzer": "ko_edge_search_analyzer"
+          },
+          "nori": {
+            "type": "text",
+            "analyzer": "ko_nori_analyzer"
+          }
+        }
+      },
+      "category": {
+        "type": "keyword"
+      },
+      "severity": {
+        "type": "integer"
+      },
+      "risk_score": {
+        "type": "float"
+      },
+      "notes": {
+        "type": "text",
+        "index": false
+      },
+      "variant_count": {
+        "type": "integer"
+      }
+    }
+  }
+}

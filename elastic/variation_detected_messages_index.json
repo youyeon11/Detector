@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  },
+  "mappings": {
+    "dynamic": "strict",
+    "properties": {
+      "message": {
+        "type": "text"
+      },
+      "message_normalized": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 1024
+          }
+        }
+      },
+      "profanity_detected": {
+        "type": "boolean"
+      },
+      "profanity_hits": {
+        "type": "nested",
+        "properties": {
+          "canonical": {
+            "type": "keyword"
+          },
+          "matched_variant": {
+            "type": "keyword"
+          },
+          "variation_type": {
+            "type": "keyword"
+          },
+          "severity": {
+            "type": "integer"
+          },
+          "risk_score": {
+            "type": "float"
+          },
+          "label": {
+            "type": "keyword"
+          },
+          "score": {
+            "type": "float"
+          },
+          "reasons": {
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}
