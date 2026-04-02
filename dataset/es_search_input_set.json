@@ -1,0 +1,138 @@
+[
+  {
+    "id": "p5-001",
+    "text": "씨발",
+    "case_type": "baseline",
+    "expected_normalized": "씨발",
+    "expected_detection": "detect",
+    "notes": "기준 욕설"
+  },
+  {
+    "id": "p5-002",
+    "text": "씌발",
+    "case_type": "char_filter",
+    "expected_normalized": "씨발",
+    "expected_detection": "detect",
+    "notes": "ko_noise_map 치환 검증"
+  },
+  {
+    "id": "p5-003",
+    "text": "ㅆ발",
+    "case_type": "jamo_noise",
+    "expected_normalized": "씨발",
+    "expected_detection": "detect",
+    "notes": "자모 축약 변형"
+  },
+  {
+    "id": "p5-004",
+    "text": "씨 발",
+    "case_type": "spacing_noise",
+    "expected_normalized": "씨발",
+    "expected_detection": "detect",
+    "notes": "공백 삽입 변형"
+  },
+  {
+    "id": "p5-005",
+    "text": "시이발",
+    "case_type": "vowel_repeat",
+    "expected_normalized": "시발",
+    "expected_detection": "detect",
+    "notes": "모음 반복 변형"
+  },
+  {
+    "id": "p5-006",
+    "text": "씨- 발",
+    "case_type": "punctuation_noise",
+    "expected_normalized": "씨발",
+    "expected_detection": "detect",
+    "notes": "특수문자 삽입 변형"
+  },
+  {
+    "id": "p5-007",
+    "text": "ㅅㅣㅂㅏㄹ",
+    "case_type": "split_jamo",
+    "expected_normalized": "시발",
+    "expected_detection": "review",
+    "notes": "현재 규칙으로 완전 수렴 불확실"
+  },
+  {
+    "id": "p5-008",
+    "text": "씨발놈아",
+    "case_type": "prefix_phrase",
+    "expected_normalized": "씨발놈아",
+    "expected_detection": "detect",
+    "notes": "edge/ngram 기여 확인"
+  },
+  {
+    "id": "p5-009",
+    "text": "진짜씨발이야",
+    "case_type": "embedded_phrase",
+    "expected_normalized": "진짜씨발이야",
+    "expected_detection": "detect",
+    "notes": "문장 중간 삽입"
+  },
+  {
+    "id": "p5-010",
+    "text": "씨바",
+    "case_type": "short_partial",
+    "expected_normalized": "씨바",
+    "expected_detection": "review",
+    "notes": "짧은 부분 일치"
+  },
+  {
+    "id": "p5-011",
+    "text": "발표 잘했어",
+    "case_type": "safe_sentence",
+    "expected_normalized": "발표 잘했어",
+    "expected_detection": "allow",
+    "notes": "정상 문장 오탐 방지"
+  },
+  {
+    "id": "p5-012",
+    "text": "씨름 한판",
+    "case_type": "similar_sound_safe",
+    "expected_normalized": "씨름 한판",
+    "expected_detection": "allow",
+    "notes": "유사음 비욕설"
+  },
+  {
+    "id": "p5-013",
+    "text": "개새기",
+    "case_type": "replacement_map",
+    "expected_normalized": "개새끼",
+    "expected_detection": "detect",
+    "notes": "replacement_map 검증"
+  },
+  {
+    "id": "p5-014",
+    "text": "병쉰",
+    "case_type": "replacement_map",
+    "expected_normalized": "병신",
+    "expected_detection": "detect",
+    "notes": "replacement_map 검증"
+  },
+  {
+    "id": "p5-015",
+    "text": "조온나",
+    "case_type": "replacement_map",
+    "expected_normalized": "존나",
+    "expected_detection": "review",
+    "notes": "replacement_map은 되지만 lexicon 미포함 가능"
+  },
+  {
+    "id": "p5-016",
+    "text": "시발점에서 출발",
+    "case_type": "safe_homograph",
+    "expected_normalized": "시발점에서 출발",
+    "expected_detection": "allow",
+    "notes": "동형 비욕설"
+  },
+  {
+    "id": "p5-017",
+    "text": "개시 합니다",
+    "case_type": "safe_homograph",
+    "expected_normalized": "개시 합니다",
+    "expected_detection": "allow",
+    "notes": "정상 단어 오탐 방지"
+  }
+]

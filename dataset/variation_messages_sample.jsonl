@@ -1,0 +1,120 @@
+{"text":"오늘 점심 메뉴 추천해줘","source":"v4_seed","notes":"safe_001"}
+{"text":"회의 자료 정리해서 보내줄게","source":"v4_seed","notes":"safe_002"}
+{"text":"주말에 영화 보러 갈래?","source":"v4_seed","notes":"safe_003"}
+{"text":"이 문장은 욕설이 전혀 없는 일반 예시입니다","source":"v4_seed","notes":"safe_004"}
+{"text":"내일 아침 9시에 회의 시작합니다","source":"v4_seed","notes":"safe_005"}
+{"text":"프로젝트 일정 다시 공유해줘","source":"v4_seed","notes":"safe_006"}
+{"text":"고생 많았어 천천히 쉬어","source":"v4_seed","notes":"safe_007"}
+{"text":"점심 먹고 산책할까","source":"v4_seed","notes":"safe_008"}
+{"text":"배포 전에 테스트 한 번 더 돌리자","source":"v4_seed","notes":"safe_009"}
+{"text":"문서 링크 업데이트 부탁해","source":"v4_seed","notes":"safe_010"}
+{"text":"오늘 날씨가 꽤 좋네","source":"v4_seed","notes":"safe_011"}
+{"text":"조심해서 들어가","source":"v4_seed","notes":"safe_012"}
+{"text":"새 기능 요구사항 정리해보자","source":"v4_seed","notes":"safe_013"}
+{"text":"회의실 예약 내가 할게","source":"v4_seed","notes":"safe_014"}
+{"text":"이번 주 안에 검토 끝내자","source":"v4_seed","notes":"safe_015"}
+{"text":"식사하고 연락드리겠습니다","source":"v4_seed","notes":"safe_016"}
+{"text":"사용자 피드백을 먼저 읽어보자","source":"v4_seed","notes":"safe_017"}
+{"text":"버그 재현 경로를 다시 남겨줘","source":"v4_seed","notes":"safe_018"}
+{"text":"오후에 커피 한 잔 하자","source":"v4_seed","notes":"safe_019"}
+{"text":"다음 스프린트 계획을 세우자","source":"v4_seed","notes":"safe_020"}
+{"text":"지표가 좋아지고 있는 것 같아","source":"v4_seed","notes":"safe_021"}
+{"text":"문제가 생기면 바로 알려줘","source":"v4_seed","notes":"safe_022"}
+{"text":"오늘은 일찍 퇴근해도 돼","source":"v4_seed","notes":"safe_023"}
+{"text":"리뷰 코멘트 반영해봤어","source":"v4_seed","notes":"safe_024"}
+{"text":"다음 버전 릴리스 노트 작성해줘","source":"v4_seed","notes":"safe_025"}
+{"text":"이 표현은 인용 예시로만 사용됩니다","source":"v4_seed","notes":"safe_026"}
+{"text":"서비스 상태를 모니터링 중입니다","source":"v4_seed","notes":"safe_027"}
+{"text":"데이터 적재 작업이 곧 끝납니다","source":"v4_seed","notes":"safe_028"}
+{"text":"이번 변경은 성능 개선 목적입니다","source":"v4_seed","notes":"safe_029"}
+{"text":"질문 있으면 편하게 남겨줘","source":"v4_seed","notes":"safe_030"}
+{"text":"시발 진짜 짜증나네","source":"v4_seed","notes":"offensive_001"}
+{"text":"ssibal 왜 이렇게 안돼","source":"v4_seed","notes":"offensive_002"}
+{"text":"sibal 또 실패했네","source":"v4_seed","notes":"offensive_003"}
+{"text":"씨발 오늘 왜 이래","source":"v4_seed","notes":"offensive_004"}
+{"text":"시 발 같은 상황이네","source":"v4_seed","notes":"offensive_005"}
+{"text":"시-발 진짜 열받네","source":"v4_seed","notes":"offensive_006"}
+{"text":"18 진짜 어이없다","source":"v4_seed","notes":"offensive_007"}
+{"text":"18놈 같은 소리 하네","source":"v4_seed","notes":"offensive_008"}
+{"text":"10발 같은 버그네","source":"v4_seed","notes":"offensive_009"}
+{"text":"ㅅㅂ 왜 또 터졌어","source":"v4_seed","notes":"offensive_010"}
+{"text":"병신 같은 판단 하지마","source":"v4_seed","notes":"offensive_011"}
+{"text":"븅신 같은 실수네","source":"v4_seed","notes":"offensive_012"}
+{"text":"병쉰 같은 소리 그만해","source":"v4_seed","notes":"offensive_013"}
+{"text":"ㅂㅅ 같은 대응이네","source":"v4_seed","notes":"offensive_014"}
+{"text":"병 신처럼 굴지 마","source":"v4_seed","notes":"offensive_015"}
+{"text":"병-신 같은 상황이다","source":"v4_seed","notes":"offensive_016"}
+{"text":"개새끼야 조용히 해","source":"v4_seed","notes":"offensive_017"}
+{"text":"개새키처럼 굴지 마","source":"v4_seed","notes":"offensive_018"}
+{"text":"개색기 같은 태도네","source":"v4_seed","notes":"offensive_019"}
+{"text":"개 새끼 같은 말투다","source":"v4_seed","notes":"offensive_020"}
+{"text":"ㄱㅅㄲ 같은 소리 하네","source":"v4_seed","notes":"offensive_021"}
+{"text":"개새ㄲㅣ라고 욕하더라","source":"v4_seed","notes":"offensive_022"}
+{"text":"지랄 그만해","source":"v4_seed","notes":"offensive_023"}
+{"text":"ㅈㄹ 하지마","source":"v4_seed","notes":"offensive_024"}
+{"text":"지 랄 같은 핑계네","source":"v4_seed","notes":"offensive_025"}
+{"text":"지-랄 좀 그만해","source":"v4_seed","notes":"offensive_026"}
+{"text":"jiral 같은 소리네","source":"v4_seed","notes":"offensive_027"}
+{"text":"미친놈처럼 왜 그래","source":"v4_seed","notes":"offensive_028"}
+{"text":"미친넘 같은 행동이네","source":"v4_seed","notes":"offensive_029"}
+{"text":"미친늠 같은 말이야","source":"v4_seed","notes":"offensive_030"}
+{"text":"ㅁㅊㄴ 같은 소리네","source":"v4_seed","notes":"offensive_031"}
+{"text":"미친 놈처럼 보이잖아","source":"v4_seed","notes":"offensive_032"}
+{"text":"꺼져 당장 내 앞에서","source":"v4_seed","notes":"offensive_033"}
+{"text":"염병하고 있네","source":"v4_seed","notes":"offensive_034"}
+{"text":"좆같은 하루다","source":"v4_seed","notes":"offensive_035"}
+{"text":"시벌 진짜 열받네","source":"v4_seed","notes":"offensive_036"}
+{"text":"시빨 같은 코드네","source":"v4_seed","notes":"offensive_037"}
+{"text":"시이발 왜 또 이래","source":"v4_seed","notes":"offensive_038"}
+{"text":"씨이이발 너무하네","source":"v4_seed","notes":"offensive_039"}
+{"text":"ㅅ!ㅂ 이게 뭐야","source":"v4_seed","notes":"offensive_040"}
+{"text":"병*신 같은 답변이네","source":"v4_seed","notes":"offensive_041"}
+{"text":"개*새끼 같은 짓이야","source":"v4_seed","notes":"offensive_042"}
+{"text":"s!bal 진짜 미치겠네","source":"v4_seed","notes":"offensive_043"}
+{"text":"byungshin 같은 실수네","source":"v4_seed","notes":"offensive_044"}
+{"text":"gaesaekki 같은 말 하지마","source":"v4_seed","notes":"offensive_045"}
+{"text":"michinnom 같은 표정 짓지마","source":"v4_seed","notes":"offensive_046"}
+{"text":"18발 같은 상황이 반복된다","source":"v4_seed","notes":"offensive_047"}
+{"text":"ㅂ0신 같은 짓을 했네","source":"v4_seed","notes":"offensive_048"}
+{"text":"개새7ㅣ처럼 욕하더라","source":"v4_seed","notes":"offensive_049"}
+{"text":"미친ㄴ0ㅁ 같은 소리다","source":"v4_seed","notes":"offensive_050"}
+{"text":"시발이라는 표현은 왜 문제가 되나요?","source":"v4_seed","notes":"boundary_001"}
+{"text":"'시발'이라는 단어를 예시로 들겠습니다","source":"v4_seed","notes":"boundary_002"}
+{"text":"욕설 예시로 씨발을 설명하는 문장입니다","source":"v4_seed","notes":"boundary_003"}
+{"text":"병신이라는 단어의 사회적 맥락을 분석해보자","source":"v4_seed","notes":"boundary_004"}
+{"text":"개새끼라는 표현을 그대로 인용하면 차단될까?","source":"v4_seed","notes":"boundary_005"}
+{"text":"지랄이라는 단어를 보고서에 쓰면 안 됩니다","source":"v4_seed","notes":"boundary_006"}
+{"text":"미친놈이라는 표현은 혐오 표현으로 분류될 수 있다","source":"v4_seed","notes":"boundary_007"}
+{"text":"꺼져라는 발화를 교육 자료에서 분석한다","source":"v4_seed","notes":"boundary_008"}
+{"text":"염병이라는 표현의 사용례를 조사해보자","source":"v4_seed","notes":"boundary_009"}
+{"text":"좆같다라는 말은 필터링 대상일 수 있다","source":"v4_seed","notes":"boundary_010"}
+{"text":"문장 안에서 '병신'을 인용하는 경우를 모아보자","source":"v4_seed","notes":"boundary_011"}
+{"text":"'개새끼'라는 표현은 왜 공격적으로 들릴까","source":"v4_seed","notes":"boundary_012"}
+{"text":"시발을 쓰지 말라고 안내문에 적어두자","source":"v4_seed","notes":"boundary_013"}
+{"text":"욕설 사전에는 ㅅㅂ 같은 축약형도 포함된다","source":"v4_seed","notes":"boundary_014"}
+{"text":"보고서에서 ssibal 표기를 어떻게 다룰지 정하자","source":"v4_seed","notes":"boundary_015"}
+{"text":"jiral 같은 영문 표기는 변형 유형 분석 대상이다","source":"v4_seed","notes":"boundary_016"}
+{"text":"이 문서는 욕설 분류기 테스트 케이스 설명용이다","source":"v4_seed","notes":"boundary_017"}
+{"text":"발화 인용과 실제 욕설 사용을 구분해야 한다","source":"v4_seed","notes":"boundary_018"}
+{"text":"리뷰 단계에서는 공격 표현을 예시로 남길 수 있다","source":"v4_seed","notes":"boundary_019"}
+{"text":"분류기가 인용 문맥을 REVIEW로 낮추는지 보자","source":"v4_seed","notes":"boundary_020"}
+{"text":"오늘 점심 뭐 먹지","source":"v4_seed","notes":"safe_031"}
+{"text":"코드 리뷰 끝나면 알려줘","source":"v4_seed","notes":"safe_032"}
+{"text":"릴리스 체크리스트를 업데이트했어","source":"v4_seed","notes":"safe_033"}
+{"text":"성능 측정 결과를 공유하겠습니다","source":"v4_seed","notes":"safe_034"}
+{"text":"다음 버전 일정이 확정됐어","source":"v4_seed","notes":"safe_035"}
+{"text":"사용자 문의에 답변 남겨줘","source":"v4_seed","notes":"safe_036"}
+{"text":"로그 포맷을 조금 바꾸자","source":"v4_seed","notes":"safe_037"}
+{"text":"모델 점수 분포를 확인해보자","source":"v4_seed","notes":"safe_038"}
+{"text":"이 이슈는 내일 오전에 처리할게","source":"v4_seed","notes":"safe_039"}
+{"text":"테스트 데이터 증설이 필요해 보여","source":"v4_seed","notes":"safe_040"}
+{"text":"서비스 응답 속도가 안정적이네","source":"v4_seed","notes":"safe_041"}
+{"text":"대시보드에 새 지표를 추가하자","source":"v4_seed","notes":"safe_042"}
+{"text":"이번 주 목표를 다시 맞춰보자","source":"v4_seed","notes":"safe_043"}
+{"text":"API 문서 예시를 더 넣자","source":"v4_seed","notes":"safe_044"}
+{"text":"작업 끝나면 메시지 남겨줘","source":"v4_seed","notes":"safe_045"}
+{"text":"시스템 상태는 현재 양호합니다","source":"v4_seed","notes":"safe_046"}
+{"text":"요청량이 늘어나고 있어","source":"v4_seed","notes":"safe_047"}
+{"text":"데이터셋 버전을 구분해서 관리하자","source":"v4_seed","notes":"safe_048"}
+{"text":"스키마 변경 전 리뷰가 필요하다","source":"v4_seed","notes":"safe_049"}
+{"text":"오늘은 여기까지 정리하자","source":"v4_seed","notes":"safe_050"}

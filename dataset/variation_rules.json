@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "variation_types": [
+    "numeric_substitution",
+    "alphabet_substitution",
+    "phonetic_variation",
+    "orthographic_variation",
+    "abbreviation",
+    "special_char_insertion",
+    "spacing_variation",
+    "repeated_char_expansion",
+    "mixed_variation"
+  ],
+  "rules": [
+    {
+      "canonical": "시발",
+      "category": "profanity",
+      "variant_rules": {
+        "numeric_substitution": ["10팍", "10팔", "18새끼", "18세끼", "2c8", "2c팔", "십8"],
+        "alphabet_substitution": ["ac팔", "sibal", "sipal", "sival", "ssibal", "sibbal", "ssival"],
+        "phonetic_variation": ["쉬이발", "쉬이방", "수이벌", "쉬이불", "쉬이붕", "쉬이빨", "쉬이팔", "쉬이펄", "쉬이풀", "사바랄", "시버럴", "시부랄", "시부럴", "시브랄", "시이발", "시이벌", "시이불", "시이붕", "시이펄", "시이플", "쓰으벌", "씨바랄", "버럴", "씨부댕", "씨부랄", "씨부럴", "씨부렁", "씨부리", "씨브랄", "씨브럴", "씨브롤", "씨비랄", "씨뽀랄", "씨이발", "씨이방", "씨이벌", "씨이빨", "씨이팔", "씨이펄", "씨이풀", "씹"],
+        "orthographic_variation": ["시빨", "시블", "시뿔", "시팍", "시팡", "시팰", "시펄", "시발", "쉬펄", "쉬풀", "쉬팡", "쉬빨", "쉬봉", "쉬벨", "쉬벌", "쉬벅", "쉬파", "쉬팍", "쉬팔", "쉽바", "쉽발", "쉽벌", "쉽뻘", "쉽팍", "쉽할", "쉽헐", "쉽활", "쉿벌", "쉿뻘", "쉿팍", "쉿팔", "쉿펄", "싚파", "스발", "스벌", "스팔", "스펄", "쉬발", "싀벨", "싀봉", "싀팍", "싀팔", "시방", "시밸", "시벌", "시볼", "시벵", "시봉", "시불", "시뽈", "시팔", "시팟", "시펠", "십밸", "십불", "십발", "십벌", "십볼", "십물", "십빡", "십빨", "십뻘", "십뿔", "십쁠", "십알", "십파", "십팔", "십펄", "십할", "십헐", "싯발", "싯벌", "싯볼", "싯빨", "싯뻘", "싰발", "싰벌", "싰볼", "싰빨", "싰뻘", "싶박", "싶발", "싶벌", "싶볼", "싶불", "싶빨", "싶뻘", "싶뿔", "싶알", "싶팍", "싶팔", "실팍", "실펄", "싶할", "싶헐", "싶활", "쓰발", "싁발"],
+        "abbreviation": ["ㅅㅂ"],
+        "special_char_insertion": ["ㅅ!ㅂ", "시*발", "시-발"],
+        "spacing_variation": ["시 발", "씨 발"],
+        "repeated_char_expansion": ["씨이이발", "시이이발"],
+        "mixed_variation": ["s!bal", "ㅅ ㅂ", "18발"]
+      }
+    },
+    {
+      "canonical": "병신",
+      "category": "insult",
+      "variant_rules": {
+        "numeric_substitution": ["ㅂ0신"],
+        "alphabet_substitution": ["byeongsin", "byungshin"],
+        "phonetic_variation": ["븅신", "병쉬"],
+        "orthographic_variation": ["병싄", "병씬"],
+        "abbreviation": ["ㅂㅅ"],
+        "special_char_insertion": ["병*신", "병-신"],
+        "spacing_variation": ["병 신"],
+        "repeated_char_expansion": ["병이이신"],
+        "mixed_variation": ["ㅂ-ㅅ", "byung-신"]
+      }
+    },
+    {
+      "canonical": "개새끼",
+      "category": "insult",
+      "variant_rules": {
+        "numeric_substitution": ["개새7ㅣ"],
+        "alphabet_substitution": ["gaesaekki", "gaesekki"],
+        "phonetic_variation": ["개새키", "개색기"],
+        "orthographic_variation": ["개새끼이", "개새꺄"],
+        "abbreviation": ["ㄱㅅㄲ"],
+        "special_char_insertion": ["개*새끼", "개-새끼"],
+        "spacing_variation": ["개 새끼", "개새 끼"],
+        "repeated_char_expansion": ["개새끼이이"],
+        "mixed_variation": ["개새ㄲㅣ", "gae새끼"]
+      }
+    },
+    {
+      "canonical": "지랄",
+      "category": "abuse",
+      "variant_rules": {
+        "numeric_substitution": ["ㅈ1랄"],
+        "alphabet_substitution": ["jiral"],
+        "phonetic_variation": ["쥐랄", "지럴"],
+        "orthographic_variation": ["지이랄", "지랄l"],
+        "abbreviation": ["ㅈㄹ"],
+        "special_char_insertion": ["지*랄", "지-랄"],
+        "spacing_variation": ["지 랄"],
+        "repeated_char_expansion": ["지이이랄"],
+        "mixed_variation": ["ㅈ-ㄹ", "ji랄"]
+      }
+    },
+    {
+      "canonical": "미친놈",
+      "category": "insult",
+      "variant_rules": {
+        "numeric_substitution": ["미친ㄴ0ㅁ"],
+        "alphabet_substitution": ["michinnom"],
+        "phonetic_variation": ["미친넘", "미친느"],
+        "orthographic_variation": ["미칀놈", "미친놈m"],
+        "abbreviation": ["ㅁㅊㄴ"],
+        "special_char_insertion": ["미친*놈", "미친-놈"],
+        "spacing_variation": ["미친 놈"],
+        "repeated_char_expansion": ["미치이인놈"],
+        "mixed_variation": ["ㅁㅊ 놈", "michin놈"]
+      }
+    }
+  ]
+}

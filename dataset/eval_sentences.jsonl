@@ -1,0 +1,20 @@
+{"text":"시발 진짜 짜증나네","label":"BLOCK","source":"seed_eval","notes":"직접 욕설"}
+{"text":"씨발 왜 이렇게 늦어","label":"BLOCK","source":"seed_eval","notes":"대표 변형"}
+{"text":"ㅅㅂ 또 오류났네","label":"BLOCK","source":"seed_eval","notes":"초성 변형"}
+{"text":"시-발 장난하냐","label":"BLOCK","source":"seed_eval","notes":"구두점 변형"}
+{"text":"병신 같은 소리 하네","label":"BLOCK","source":"seed_eval","notes":"모욕 표현"}
+{"text":"븅신 인증이네","label":"BLOCK","source":"seed_eval","notes":"변형 비하"}
+{"text":"개새끼야 당장 꺼져","label":"BLOCK","source":"seed_eval","notes":"복합 욕설"}
+{"text":"꺼져 버려","label":"REVIEW","source":"seed_eval","notes":"문맥 따라 강도 조정 가능"}
+{"text":"미친놈처럼 운전하네","label":"BLOCK","source":"seed_eval","notes":"직접 모욕"}
+{"text":"'시발' 사용 금지 예시 문장","label":"REVIEW","source":"seed_eval","notes":"메타 문맥"}
+{"text":"욕설 예시로 씨발을 분석합니다","label":"REVIEW","source":"seed_eval","notes":"분석/설명 문맥"}
+{"text":"게시글에서 병신 표현을 탐지해야 한다","label":"REVIEW","source":"seed_eval","notes":"탐지 설명 문맥"}
+{"text":"시발점부터 다시 설명해 주세요","label":"PASS","source":"seed_eval","notes":"동음이의 비욕설"}
+{"text":"개시 여부를 오늘 결정합니다","label":"PASS","source":"seed_eval","notes":"초성 유사 비욕설"}
+{"text":"시이발음 표기는 잘못된 예시다","label":"REVIEW","source":"seed_eval","notes":"형태 유사 메타 문맥"}
+{"text":"문장을 정규화해서 ㅂㅅ 변형을 확인하자","label":"REVIEW","source":"seed_eval","notes":"실험 문맥"}
+{"text":"오늘 회의 진짜 길다","label":"PASS","source":"seed_eval","notes":"정상 문장"}
+{"text":"서비스 오류 원인을 분석 중입니다","label":"PASS","source":"seed_eval","notes":"정상 문장"}
+{"text":"꺼져가는 불씨를 살렸다","label":"PASS","source":"seed_eval","notes":"동형 비욕설"}
+{"text":"미친 듯이 바빴던 하루","label":"REVIEW","source":"seed_eval","notes":"관용적 표현"}

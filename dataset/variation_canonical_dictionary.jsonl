@@ -1,0 +1,8 @@
+{"canonical":"시발","category":"profanity","severity":5,"risk_score":0.99,"description":"대표적인 직접 욕설","language":"ko","active":true,"source":"seed_v4"}
+{"canonical":"병신","category":"insult","severity":4,"risk_score":0.95,"description":"비하 표현","language":"ko","active":true,"source":"seed_v4"}
+{"canonical":"개새끼","category":"insult","severity":5,"risk_score":0.97,"description":"강한 모욕 표현","language":"ko","active":true,"source":"seed_v4"}
+{"canonical":"지랄","category":"abuse","severity":4,"risk_score":0.91,"description":"공격적 비난 표현","language":"ko","active":true,"source":"seed_v4"}
+{"canonical":"미친놈","category":"insult","severity":4,"risk_score":0.93,"description":"정신질환 비하성 표현","language":"ko","active":true,"source":"seed_v4"}
+{"canonical":"꺼져","category":"harassment","severity":3,"risk_score":0.82,"description":"배제성 공격 표현","language":"ko","active":true,"source":"seed_v4"}
+{"canonical":"염병","category":"abuse","severity":4,"risk_score":0.92,"description":"저주성 욕설","language":"ko","active":true,"source":"seed_v4"}
+{"canonical":"좆","category":"profanity","severity":5,"risk_score":0.98,"description":"고위험 성적 욕설","language":"ko","active":true,"source":"seed_v4"}

@@ -1,0 +1,8 @@
+{"id":"mp-001","text_a":"씨발","text_b":"씨 발","expected_relation":"equivalent","note":"공백 변형"}
+{"id":"mp-002","text_a":"씨발","text_b":"ㅆ발","expected_relation":"equivalent","note":"자모/초성 변형"}
+{"id":"mp-003","text_a":"씨발","text_b":"씌발","expected_relation":"equivalent","note":"치환 변형"}
+{"id":"mp-004","text_a":"병신","text_b":"븅신","expected_relation":"equivalent","note":"모음 변형"}
+{"id":"mp-005","text_a":"개새끼","text_b":"개 색기","expected_relation":"equivalent","note":"띄어쓰기+철자 변형"}
+{"id":"mp-006","text_a":"시발점","text_b":"씨발","expected_relation":"non_equivalent","note":"정상 단어 vs 욕설"}
+{"id":"mp-007","text_a":"개시","text_b":"개새끼","expected_relation":"non_equivalent","note":"정상 단어 vs 욕설"}
+{"id":"mp-008","text_a":"씨앗","text_b":"씨발","expected_relation":"non_equivalent","note":"정상 단어 vs 욕설"}
