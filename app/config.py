@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     elasticsearch_password: str | None = Field(default=None)
     profanity_lexicon_index: str = Field(default="profanity_lexicon")
     noisy_text_docs_index: str = Field(default="noisy_text_docs")
-    v4_detected_messages_index: str = Field(default="v4_detected_messages")
+    variation_detected_messages_index: str = Field(default="variation_detected_messages")
     elasticsearch_request_timeout: float = Field(default=3.0)
 
     redis_url: str = Field(default="redis://localhost:6379/0")
@@ -37,6 +37,10 @@ class Settings(BaseSettings):
         env_file_encoding="utf-8",
         extra="ignore",
     )
+
+    @property
+    def v4_detected_messages_index(self) -> str:
+        return self.variation_detected_messages_index
 
 
 @lru_cache

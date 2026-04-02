@@ -26,7 +26,7 @@ def create_app() -> FastAPI:
         },
         {
             "name": "stats",
-            "description": "Read V4 aggregate statistics from Elasticsearch.",
+            "description": "Read variation detection aggregate statistics from Elasticsearch.",
         },
     ]
     app = FastAPI(

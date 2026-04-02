@@ -6,10 +6,10 @@ from app.schemas.request import AnalyzeRequest
 from app.schemas.response import (
     AnalyzeQueryPreview,
     AnalyzeResponse,
-    AnalyzeV4Preview,
-    V4ProfanityHitResponse,
+    AnalyzeVariationPreview,
+    VariationHitResponse,
 )
-from app.services.detector_v4 import DetectorServiceV4, get_detector_service_v4
+from app.services.variation_detection import VariationDetectionService, get_variation_detection_service
 
 
 router = APIRouter(tags=["analyze"])
@@ -34,7 +34,7 @@ def analyze(
             },
         },
     ),
-    detector: DetectorServiceV4 = Depends(get_detector_service_v4),
+    detector: VariationDetectionService = Depends(get_variation_detection_service),
 ) -> AnalyzeResponse:
     normalized, preview = detector.analyze(request.text)
     document = detector.detect_document(request.text)
@@ -50,11 +50,11 @@ def analyze(
             norm=normalized.collapsed,
             ngram=_extract_ngram_preview(lexicon_query),
         ),
-        v4_preview=AnalyzeV4Preview(
+        variation_preview=AnalyzeVariationPreview(
             message_normalized=document.message_normalized,
             profanity_detected=document.profanity_detected,
             profanity_hits=[
-                V4ProfanityHitResponse(
+                VariationHitResponse(
                     canonical=hit.canonical,
                     matched_variant=hit.matched_variant,
                     variation_type=hit.variation_type,
@@ -71,7 +71,12 @@ def analyze(
 
 
 def _extract_ngram_preview(search_body: dict) -> str:
-    should = search_body.get("query", {}).get("bool", {}).get("should", [])
+    query = search_body.get("query", {})
+    function_score = query.get("function_score", {})
+    bool_query = function_score.get("query", {}).get("bool")
+    if bool_query is None:
+        bool_query = query.get("bool", {})
+    should = bool_query.get("should", [])
     for clause in should:
         match = clause.get("match", {})
         if "canonical.ngram" in match:

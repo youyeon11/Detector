@@ -3,8 +3,8 @@ from __future__ import annotations
 from fastapi import APIRouter, Body, Depends
 
 from app.schemas.request import DetectRequest
-from app.schemas.response import DetectResponse, V4ProfanityHitResponse
-from app.services.detector_v4 import DetectorServiceV4, get_detector_service_v4
+from app.schemas.response import DetectResponse, VariationHitResponse
+from app.services.variation_detection import VariationDetectionService, get_variation_detection_service
 
 
 router = APIRouter(tags=["detect"])
@@ -29,10 +29,11 @@ def detect(
             },
         },
     ),
-    detector: DetectorServiceV4 = Depends(get_detector_service_v4),
+    detector: VariationDetectionService = Depends(get_variation_detection_service),
 ) -> DetectResponse:
-    result = detector.detect(request.text)
-    document = detector.detect_document(request.text)
+    execution = detector.detect_with_document(request.text)
+    result = execution.detection_result
+    document = execution.document_result
     return DetectResponse(
         label=result.label,
         score=result.score,
@@ -41,7 +42,7 @@ def detect(
         normalized_text=result.normalized_text,
         profanity_detected=document.profanity_detected,
         profanity_hits=[
-            V4ProfanityHitResponse(
+            VariationHitResponse(
                 canonical=hit.canonical,
                 matched_variant=hit.matched_variant,
                 variation_type=hit.variation_type,
