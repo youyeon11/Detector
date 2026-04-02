@@ -81,7 +81,7 @@ class VariationClassificationResult:
 
 
 @dataclass(slots=True)
-class V4ProfanityHit:
+class VariationHit:
     canonical: str
     matched_variant: str
     variation_type: VariationType
@@ -93,8 +93,13 @@ class V4ProfanityHit:
 
 
 @dataclass(slots=True)
-class V4DetectionDocument:
+class VariationDetectionDocument:
     message: str
     message_normalized: str
     profanity_detected: bool
-    profanity_hits: list[V4ProfanityHit] = field(default_factory=list)
+    profanity_hits: list[VariationHit] = field(default_factory=list)
+
+
+# Backward-compatible aliases during the Variation Detection rename.
+V4ProfanityHit = VariationHit
+V4DetectionDocument = VariationDetectionDocument
